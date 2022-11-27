@@ -21,7 +21,7 @@ let track = document.createElement('audio');
 let all_song = [
     {
         name: "Esa Cruz",
-        path: "songs/Anuel AA - Esa Cruz.mp3",
+        path: "Songs/Anuel AA - Esa Cruz.mp3",
         img: "https://th.bing.com/th/id/OIP.9rAGxbJsEmMbMOg0pH4R2QHaHa?pid=ImgDet&rs=1",
         singer: "Anuel AA"
 
@@ -29,28 +29,28 @@ let all_song = [
 
     {
         name: "BAD!",
-        path: "songs/XXXTENTACION - BAD!.mp3",
+        path: "Songs/XXXTENTACION - BAD!.mp3",
         img: "https://i1.sndcdn.com/artworks-000435918318-r94y9l-t500x500.jpg",
         singer: "XXXTENTACION"
     },
 
     {
         name: "5 start",
-        path: "songs/Eladio Carrión - 5 Star.mp3",
+        path: "Songs/Eladio Carrión - 5 Star.mp3",
         img: "https://1.bp.blogspot.com/-VhjRheOetag/YN_HCceMlWI/AAAAAAAALDk/DQgAEtoxEkYkUknt4fyetY3d3CVOTvD4gCLcBGAsYHQ/s1000/SEN2-KBRN.jpg",
         singer: "Eladio Carrion"
     },
 
     {
         name: "Fantasias",
-        path: "songs/Rauw Alejandro & Farruko - Fantasías.mp3",
+        path: "Songs/Rauw Alejandro & Farruko - Fantasías.mp3",
         img: "https://images.genius.com/4083497ceb78912dfa1fa5bd6d80f787.1000x1000x1.jpg",
         singer: "Rawr Alejandro & Farruko"
     },
 
     {
         name: "Tweakin",
-        path: "songs/IV JAY  Tweakin with Luh Kel.mp3",
+        path: "Songs/IV JAY  Tweakin with Luh Kel.mp3",
         img: "https://www.ivjay.com/sites/g/files/g2000012976/files/2021-10/Tweakin%20Acoustic_0.jpg",
         singer: "Iv jay ft.luk kel"
     }
