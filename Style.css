@@ -1,0 +1,470 @@
+:root{
+    --main-bg-red: #C8394d;
+    --main-bg-black: #1D1D1D;
+    --main-bg-black_2: #212121;
+    --main-bg-black_3: #282828;
+    --main-bg-black_4: #303030;
+    --main-bg-white: #fff;
+    --main-bg-white_2: #767676;
+    --main-bg-white_3: #5a5a5a;
+    --main-bg-white_4: #424242;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-bg-black_3);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: dense;
+}
+
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: var(--main-bg-black_4);
+    padding: 30px;
+}
+
+.options {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: end;
+
+}
+
+.options button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+i {
+    font-size: 20px;
+    color: var(--main-bg-red);
+}
+
+.menu {
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #00ccff;
+    animation: parpadear 1s infinite;
+    z-index: 50;
+}
+
+@keyframes parpadear {
+
+    0% {
+        background: var(--main-bg-white_2);
+    }
+
+    50% {
+        background: var(--main-bg-white_3);
+    }
+
+
+    100% {
+        background: var(--main-bg-white_2);
+    }
+}
+
+#profile {
+    font-size: 20px;
+    color: var(--main-bg-red);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 50;
+
+}
+
+.message {
+    margin: 100px 80px 40px 80px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    overflow: hidden;
+}
+
+.user-message {
+    font-family: Bell MT;
+    line-height: 27px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px 0.8fr;
+    text-justify: auto;
+}
+
+#Planet {
+    width: 50px;
+    height: 30px;
+    margin: 20px 10px 0px 20px;
+    border-radius: 5px;
+}
+
+#Astronaut {
+    margin: 20px;
+    border-radius: 5px;
+    width: 600px;
+    height: 350px;
+    justify-content: center;
+}
+
+
+.container>.Music {
+    grid-column: span 2;
+}
+
+.Music >.information {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--main-bg-black);
+    overflow: hidden;
+    justify-items: center;
+}
+
+
+.information {
+    padding-bottom: 17%;
+    line-height: 30px;
+    place-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    justify-items: center;
+}
+
+#img_song {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.line {
+    position: relative;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 358px;
+    height: 358px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 140%;
+    background: linear-gradient(#00ccff, #00ccff);
+    animation: animate 4s linear infinite;
+    filter: blur(5px);
+    box-shadow: 0 0 5px rgba(3, 233, 244, 1),
+        0 0 25px rgba(3, 233, 244, 1),
+        0 0 50px rgba(3, 233, 244, 1),
+        0 0 100px rgba(3, 233, 244, 1),
+        0 0 200px rgba(3, 233, 244, 0.5),
+        0 0 300px rgba(3, 233, 244, 0.5);
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sub {
+    color: #858585;
+    font-weight: 10;
+}
+
+.botton-music {
+    background-color: var(--main-bg-black_4);
+    display: grid;
+    position: relative;
+    place-items: center;
+    height: 17vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+
+
+input[type="range"] {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    outline: none;
+    height: 4px;
+    cursor: pointer;
+}
+
+.botton-music i {
+    font-size: 30px;
+    color: var(--main-bg-white);
+    cursor: pointer;
+}
+
+
+.botton-music button {
+    background-color: var(--main-bg-white_4);
+    border: none;
+    border-radius: 100px;
+    width: 8vh;
+    height: 8vh;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+.botton-music button:hover {
+    background-color: var(--main-bg-red);
+}
+
+
+#menu_profile {
+    display: none;
+}
+
+.btn_menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    margin-left: -100%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    z-index: 20;
+}
+
+#menu_profile:checked~.btn_menu {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+}
+
+.container_M {
+    position: relative;
+    background-color: var(--main-bg-black_4);
+    border-right: solid 2px #999797;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+.lines_profile {
+    display: grid;
+    place-items: center;
+}
+
+
+#img_profile {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100px;
+}
+
+.lines_profile::before,
+.lines_profile::after {
+    content: "";
+    position: absolute;
+
+    width: 130px;
+    height: 2px;
+    background-color: var(--main-bg-red);
+}
+
+.lines_profile::before {
+    left: 1em;
+}
+
+.lines_profile::after {
+    right: 1em;
+}
+
+.container_text {
+    background: var(--main-bg-black_2);
+    position: relative;
+    height: 14em;
+    overflow: hidden;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    line-height: 30px;
+    font-size: 17px;
+    color: var(--main-bg-white);
+    gap: 40px;
+}
+
+#heart {
+    animation: animate_heart 1s infinite;
+}
+
+@keyframes animate_heart {
+    0% {
+        font-size: 30px;
+    }
+
+    50% {
+        font-size: 50px;
+    }
+
+    100% {
+        font-size: 30px;
+    }
+}
+
+
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 60px;
+}
+
+h3 {
+    color: var(--main-bg-white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+.contacts i {
+    font-size: 30px;
+}
+
+@media (max-width:1024px){
+
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: row;
+    }
+
+    .message{
+        grid-row-start: 3;
+    }
+
+    .Music{
+        grid-row-start: 1;
+    }
+
+}
+
+@media(max-width: 712px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow:dense;
+    }
+
+    .message {
+        display: none;
+    }
+
+    .navigation {
+        padding: 10px 30px 10px 30px;
+    }
+
+    .information {
+        width: 100%;
+        height: 70vh;
+    }
+
+    #img_song {
+        width: 300px;
+        height: 300px;
+    }
+
+    .Music{
+        grid-row-start: 3;
+    }
+
+    .Music>.botton-music {
+        text-align: center;
+        background-color: var(--main-bg-black_4);
+        height: 15vh;
+    }
+
+    .botton-music i {
+        font-size: 25px;
+    }
+
+    button {
+        width: 7vh;
+        height: 4vh;
+    }
+
+    .lines_profile::before,
+    .lines_profile::after {
+        width: 90px;
+    }
+
+    .line {
+        max-width: 300px;
+        max-height: 308px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    @keyframes animate_heart {
+        0% {
+            font-size: 25px;
+        }
+    
+        50% {
+            font-size: 40px;
+        }
+    
+        100% {
+            font-size: 25px;
+        }
+    }
+
+}
