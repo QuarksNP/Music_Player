@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/0095120013.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    <title>Music</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="right">
+            <header>
+                <input type="checkbox" id="menu_profile">
+                <div class="btn_menu">
+                    <div class="container_M">
+                        <div class="lines_profile">
+                            <img id="img_profile" src="Wallpapers/img_profile.jpeg" alt="iv jay">
+                        </div>
+
+                        <div class="container_text">
+                            <div class="text">
+                                <p>It is a demonstration of presenting my musical tastes through this little player that
+                                    I made with love, always have a nice day, I love you!</p>
+                                <i id="heart" class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <h3>Contacts:</h3>
+
+                        <div class="contacts">
+
+                            <a href="https://www.instagram.com/alberto_gzb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://web.facebook.com/profile.php?id=100006743289758" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/QuarksNP" target="_blank"><i class="fa-brands fa-github"></i></a>
+        
+                        </div>
+                    </div>
+
+                </div>
+                <nav class="navigation">
+                    <div class="menu">
+                        <label for="menu_profile" id="profile" class="fa-regular fa-user" abbr title="Profile"></label>
+                    </div>
+                    <div class="options">
+                        <button onclick="repeat_song()" id="repeat" abbr title="Repeat song"><i class="fa-solid fa-repeat"></i></button>
+                        <button onclick="random_song()" id="ramdon" abbr title="Ramdon song"><i class="fa-solid fa-shuffle"></i></button>
+                        <button onclick="mute_song()" id="mute"><i class="fa-solid fa-volume-high"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="message">
+                <div class="user-message">
+                    <img id="Planet" src="Wallpapers/Planet.jpg" />
+                    <div class="edit">
+                        <h2>REMEMBER</h2>
+                        <p>“The life of man (in a state of nature) is solitary, poor, nasty, brutish, and short” –
+                            Thomas Hobbes</p>
+                    </div>
+                </div>
+
+                <img id="Astronaut" src="Wallpapers/Starwars.jpg" alt="Starwars">
+
+            </section>
+
+        </div>
+
+        <aside class="Music">
+            <div class="information">
+                <div class="line">
+                    <img id="img_song">
+                </div>
+
+                <h3 id="artist">Anuel AA</h3>
+                <p id="theme">Esa Cruz</p>
+            </div>
+
+            <div class="botton-music">
+                <input type="range" min="0" max="100" value="0" id="duration_song" onchange="change_duration()">
+                <button onclick="previous_song()"><i id="backward" class="fa-solid fa-backward-step"></i></button>
+                <button onclick="justPlay()" id="button_play"><i class="fa-solid fa-play"
+                        aria-hidden="true"></i></button>
+                <button onclick="next_song()" id="forward"><i class="fa-solid fa-forward-step "
+                        aria-hidden=""></i></button>
+            </div>
+        </aside>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
